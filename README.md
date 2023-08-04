@@ -53,6 +53,7 @@ Remove a disciplina de identificador id do sistema e retorna a disciplina que fo
 
 Retorna todas as disciplinas inseridas no sistema ordenadas pela nota média (da maior para a menor) e o \<código de resposta HTTP\> (ver [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)).
 
+**Lembrem de tratar as esceções de forma correta, com um handler de exceções (classe marcada com @RestControllerAdvice) e que tem métodos que a gente define para serem chamados quando as exceções ocorrerem. É nesta classe que preparamos uma resposta para o cliente com informações mais detalhadas sobre o erro e o código de resposta HTTP adequado.
 
 **Seguem algumas dicas...**
 
